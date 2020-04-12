@@ -1,0 +1,6 @@
+<template name="img-navigator-template">
+  <view class="img-navigator">
+    <image src="{{src}}" style="height:150px;width:100%;" />
+    <text style="position:absolute;bottom:0.5em;left:0.5em;color:#fff;">{{title}}</text>
+  </view>
+</template>

@@ -1,0 +1,23 @@
+<view style="background-color:#eee;">
+  <image src="{{headerImgUrl}}" style="width:100%;height:150px;"/>
+  <import src="../../com/header-template.wxml"/>
+  <import src="../../com/content-template.wxml"/>
+  <view style="margin-top:0.5em;background-color:#fff;overflow: hidden;">
+    <template is="hearder-template" data="{{title: '当季热玩'}}"/>
+    <block wx:for="{{datas}}" wx:key="index">
+      <template is="content-template" data="{{...item}}"/>
+    </block>
+  </view>
+  <view style="margin-top:0.5em;background-color:#fff;overflow: hidden;">
+    <template is="hearder-template" data="{{title: '出境游'}}"/>
+    <block wx:for="{{datas}}" wx:key="index">
+      <template is="content-template" data="{{...item}}"/>
+    </block>
+  </view>
+  <view style="margin-top:0.5em;background-color:#fff;overflow: hidden;">
+    <template is="hearder-template" data="{{title: '国内游'}}"/>
+    <block wx:for="{{datas}}" wx:key="index">
+      <template is="content-template" data="{{...item}}"/>
+    </block>
+  </view>
+</view>

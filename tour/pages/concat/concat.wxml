@@ -1,0 +1,10 @@
+<import src="../../com/img-navigator.wxml"/>
+<view wx:for="{{imgs}}" wx:key="index">
+  <template is="img-navigator-template" data="{{...item}}" /> 
+</view>
+<view class="ul-container">
+  <text style="display:block;font-size:1.2em;padding:0.5em;border-bottom:1px solid #eee;">联系我们</text>
+  <text class="li-text">联系地址:</text>
+  <text class="li-text">联系电话:</text>
+  <text class="li-text">联系QQ:</text>
+</view>

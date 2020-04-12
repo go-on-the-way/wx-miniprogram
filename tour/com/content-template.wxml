@@ -1,0 +1,7 @@
+<template name="content-template">
+  <view class="content-block">
+    <image class="content-block-img" src="{{src}}" />
+    <text class="content-block-text">{{desc}}</text>
+    <text class="content-block-text">{{price}}</text>
+  </view>
+</template>

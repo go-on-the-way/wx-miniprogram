@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<swiper class="swiper-imgs" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{tours}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='navigator-button-container'>
+  <view class="row-container">
+    <button class="col-containter" type="default" bindtap="bindViewTap">周边游</button>
+    <button class="col-containter" type="default" bindtap="bindViewTap">国内游</button>
+  </view>
+  <view class="row-container">
+    <button class="col-containter" type="default" bindtap="bindViewTap">国际游</button>
+    <button class="col-containter" type="default" bindtap="bindViewTap">自由行</button>
+  </view>
+</view>
+
+<view class="service-type">
+  <view class="col-containter"  wx:for="{{services}}" wx:key="index">
+    <image src="{{item.icon}}" mode="aspectFit" />
+    <text>{{item.label}}</text>
+  </view>
+</view>
+<import src="../../com/header-template.wxml"/>
+<import src="../../com/content-template.wxml"/>
+<view class="hot-tour">
+  <template is="hearder-template" data="{{title: '热门旅游路线'}}"/>
+  <block wx:for="{{hotTourDatas}}" wx:key="index">
+    <template is="content-template" data="{{...item}}"/>
+  </block>
+</view>
+
+<view class="recommend-lines">
+  <template is="hearder-template" data="{{title: '推荐景点'}}"/>
+  <block wx:for="{{lines}}" wx:key="index">
+    <template is="content-template" data="{{...item}}"/>
+  </block>
+</view>
+
+

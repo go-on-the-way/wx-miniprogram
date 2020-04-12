@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/strategy/strategy",
+    "pages/concat/concat",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "旅游",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/icon/index-icon.png",
+        "selectedIconPath": "img/icon/index-icon.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "img/icon/time-icon.png",
+        "selectedIconPath": "img/icon/time-icon.png"
+      },
+      {
+        "pagePath": "pages/strategy/strategy",
+        "text": "旅游攻略",
+        "iconPath": "img/icon/user-icon.png",
+        "selectedIconPath": "img/icon/user-icon.png"
+      },
+      {
+        "pagePath": "pages/concat/concat",
+        "text": "联系我们",
+        "iconPath": "img/icon/concat-icon.png",
+        "selectedIconPath": "img/icon/concat-icon.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

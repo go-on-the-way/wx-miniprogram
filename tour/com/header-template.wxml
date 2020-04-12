@@ -1,0 +1,5 @@
+<template name="hearder-template">
+  <view class="hearder-text">
+    <text>- {{title}} -</text>
+  </view>
+</template>

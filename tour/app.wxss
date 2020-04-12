@@ -1,0 +1,46 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+page {
+  background-color: #eee;
+}
+
+view {
+  background-color: #fff;
+}
+
+swiper-item image {
+  width: 100%;
+}
+
+/*公共模块样式*/
+.hearder-text {
+  padding: 1em 0;
+  margin-bottom: 0.5em;
+  text-align: center;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.content-block-img {
+  height: 6em;
+  width: 100%;
+  border-right: 0.25em solid #fff;
+  border-left: 0.25em solid #fff;
+}
+
+.content-block-text {
+  display: block;
+  padding-left: 0.3em;
+  font-size: 24rpx;
+}
+
+.img-navigator {
+  position: relative;
+}

@@ -1,0 +1,47 @@
+/**index.wxss**/
+.navigator-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-top: 0.5em;
+}
+
+.navigator-button-container .row-container {
+  display: flex;
+  margin: 0.5em;
+}
+
+.navigator-button-container .col-containter {
+  width: 40%;
+}
+
+.service-type {
+  display: flex;
+  padding: 0.5em 0;
+}
+
+.service-type .col-containter {
+  flex: 1;
+  text-align: center;
+}
+
+.service-type .col-containter image {
+  width: 100%;
+  height: 2em;
+}
+
+.hot-tour,
+.recommend-lines {
+  margin-top:0.5em;
+  overflow: hidden;/*触发BFC*/
+}
+
+.hot-tour .content-block {
+  width: 48.5%;
+  float: left;
+}
+
+.recommend-lines  .content-block {
+  width: 32.5%;
+  float: left;
+}

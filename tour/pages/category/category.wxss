@@ -1,0 +1,4 @@
+.content-block {
+  width: 48.5%;
+  float: left;
+}
